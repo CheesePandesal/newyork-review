@@ -1,0 +1,109 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sort__and__search {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+.sort {
+  padding: 0.8rem;
+  border: none;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+}
+
+form {
+  margin: 0 1rem;
+}
+.input__search {
+  border-radius: 14px;
+  padding: 0.7rem;
+  border: 1px solid #dcdcdc;
+  outline: none;
+}
+option:hover {
+  background-color: #cac7c7;
+}
+.search__button {
+  padding: 0.7rem;
+  border-radius: 14px;
+  border: none;
+  background-color: #dcdcdc;
+  margin-left: 10px;
+}
+.sort__container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.page__button {
+  width: 160px;
+  height: 50px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  border-radius: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.movie__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 15px;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0.3px 2.2px -4px rgba(0, 0, 0, 0.02),
+    0 0.8px 5.3px -4px rgba(0, 0, 0, 0.028),
+    0 1.5px 10px -4px rgba(0, 0, 0, 0.035),
+    0 2.7px 17.9px -4px rgba(0, 0, 0, 0.042),
+    0 5px 33.4px -4px rgba(0, 0, 0, 0.05), 0 12px 80px -4px rgba(0, 0, 0, 0.07);
+  width: 300px;
+  height: 375px;
+  transition: all 0.3s ease-in-out;
+}
+.movie__container:hover {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  display: block;
+}
+
+.movie__list {
+  display: grid;
+  place-items: center;
+  grid-gap: 2rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.movie__image {
+  max-height: 150px;
+  border-radius: 10px;
+}
+.movie__year {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.movie__description {
+  font-size: 0.8rem;
+}
+hr {
+  width: 75px;
+}
